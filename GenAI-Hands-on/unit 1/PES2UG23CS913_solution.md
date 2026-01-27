@@ -1,30 +1,7 @@
 # Unit 1 Assignment: answers PES2UG23CS913
-## Overview
-This document provides answers and explanations for the Unit 1 Assignment based on the HandsOn-1_Unit1.ipynb notebook and theoretical understanding of transformer architectures.
-
----
 
 ## The Models to Test
 
-### 1. **BERT** (`bert-base-uncased`)
-- **Type**: Encoder-only model
-- **Training Objective**: Masked Language Modeling (MLM)
-- **Strengths**: Understanding text, classification, token-level tasks
-- **Weaknesses**: Cannot generate new tokens sequentially, not designed for generation
-
-### 2. **RoBERTa** (`roberta-base`)
-- **Type**: Encoder-only model (optimized version of BERT)
-- **Training Objective**: Improved MLM with better preprocessing
-- **Strengths**: Better performance than BERT on understanding tasks
-- **Weaknesses**: Same as BERT - cannot generate text
-
-### 3. **BART** (`facebook/bart-base`)
-- **Type**: Encoder-Decoder model
-- **Training Objective**: Seq2Seq denoising autoencoder
-- **Strengths**: Can generate text, designed for summarization, translation, generation
-- **Weaknesses**: More computationally expensive than encoders
-
----
 
 ## Experiment 1: Text Generation
 
