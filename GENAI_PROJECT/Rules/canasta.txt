@@ -1,0 +1,80 @@
+GAME: Canasta (Classic Canasta)
+SOURCE: https://www.pagat.com/rummy/canasta.html
+
+=== PLAYERS & DECK ===
+- Best for 4 players in fixed partnerships (2 vs 2)
+- Two standard 52-card decks + 4 jokers = 108 cards
+- Natural cards: A, K, Q, J, 10, 9, 8, 7, 6, 5, 4
+- Wild cards: ALL twos (deuces) and ALL jokers
+- Threes: special functions (not melded normally)
+
+=== CARD VALUES (for scoring) ===
+- Joker: 50 pts; Ace/Two: 20 pts; K/Q/J/10/9/8: 10 pts; 7/6/5/4/Black3: 5 pts; Red 3: bonus
+
+=== DEAL ===
+- 11 cards dealt to each player
+- Top card of remaining stock turned face up to start Discard Pile
+- If first face-up card is wild or red three, another card is turned until a normal card appears (pile is "frozen")
+- Red threes dealt to players must be placed face up immediately; replacement cards drawn
+
+=== OBJECTIVE ===
+Score points by melding cards. Complete 7-card melds ("Canastas") for bonuses.
+A valid meld: 3+ cards of the same natural rank (4 through Ace); wild cards may substitute with restrictions.
+
+=== MELD RULES ===
+- Every meld must contain at least 2 natural cards
+- Maximum 3 wild cards in any single meld
+- No meld can contain more than 3 wild cards
+- Partnership cannot have two separate melds of the same rank (auto-merged)
+- Cannot add wild cards to a pure canasta to convert it (no — wild cards CAN be added to "dirty" canastas up to limit)
+
+=== CANASTAS ===
+- Canasta = any meld of exactly 7+ cards
+- Natural/Pure/Red Canasta: all 7 cards are natural (no wild cards) → topped with a RED card; bonus = 500 pts
+- Mixed/Dirty/Black Canasta: 1+ wild cards included → topped with a black card; bonus = 300 pts
+
+=== PLAY (Each Turn) ===
+1. DRAW: Take top card from Stock OR take the ENTIRE Discard Pile (if conditions met)
+2. MELD (optional, but MANDATORY if taking discard pile)
+3. DISCARD: One card face up on Discard Pile
+
+=== TAKING THE DISCARD PILE ===
+If pile is NOT frozen: can take it if you can meld its top card using:
+   (a) Two natural cards of same rank as top discard, OR
+   (b) Top discard matches rank of an existing meld (add it to that meld)
+If pile IS frozen: must hold two natural cards of same rank as top discard to take it
+
+=== FROZEN DISCARD PILE ===
+Pile becomes frozen in three cases:
+1. Wild card in the pile (placed at right-angle)
+2. Red three turned up as first discard
+3. Your partnership has not yet melded (frozen for you only)
+
+=== INITIAL MELD REQUIREMENT ===
+- First meld by a partnership must meet a minimum card value count
+- Requirement depends on cumulative score: 
+  Below 0: 15 pts; 0-1499: 50 pts; 1500-2999: 90 pts; 3000+: 120 pts
+- Can use top of discard pile + hand cards to meet count
+- Bonuses (canastas, red threes) do NOT count toward minimum
+
+=== GOING OUT ===
+- Can only go out if partnership has at least ONE completed canasta
+- Go out by melding all cards (with or without a final discard)
+- Optional: ask partner "may I go out?" before going out; partner must answer yes/no and both are bound
+
+=== SCORING ===
+Hand score = (Bonus points) + (Value of melded cards) - (Value of cards in hand)
+Bonuses:
+- Natural canasta: 500 pts each
+- Mixed canasta: 300 pts each
+- Going out: 100 pts (200 if concealed)
+- Going out concealed: additional 100 pts
+- Red threes: 100 pts each (400 pts if all 4; 800 if team has no canasta, these become penalties)
+Game ends when one partnership reaches 5000 cumulative points.
+
+=== KEY CONSTRAINTS (PARTIAL OBSERVABILITY) ===
+- Partner's hand is private (cannot show or discuss cards)
+- Opponent hands are completely hidden
+- Discard pile is visible (face up); Stock cards are hidden
+- Once pile is taken, opponent can count approximately how many cards were in it
+- Wild cards are visible in the pile (frozen indication)

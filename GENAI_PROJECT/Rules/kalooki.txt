@@ -1,0 +1,71 @@
+GAME: Caribbean Kalooki (Jamaican Kalooki)
+SOURCE: https://www.pagat.com/rummy/kaluki2.html
+
+=== PLAYERS & DECK ===
+- 3 to 6 players (tournaments: 4 per table)
+- Two standard 52-card decks + 4 jokers = 108 cards
+- Wild cards: Jokers
+
+=== CARD VALUES (for penalty scoring) ===
+- Joker: 50 pts each
+- Ace: 15 pts
+- K, Q, J: 10 pts each
+- 2-10: face value
+- 3s and 4s also serve as special special meld types (see below)
+
+=== OBJECTIVE ===
+A set of 9 games ("deals") makes a "set". Player with the lowest cumulative score wins.
+Each game (deal) has a contract — a minimum required meld to lay down.
+
+=== MELD TYPES ===
+- "Three" (Set): 3+ cards of the same rank (suits don't matter; duplicates allowed); e.g., 5-5-5 or K-K-K-K-K
+- "Four" (Run): 4+ consecutive cards of the same suit; e.g., 8♠-9♠-10♠-J♠-Q♠
+  - Ace can be high or low, but ONLY at ends: A-2-3-4 and J-Q-K-A are valid; K-A-2-3 is NOT valid
+- Joker restrictions in "fours": Cannot be used for consecutive positions (e.g., 5-J-7-J is OK; 5-J-J-8 is NOT)
+- Joker restrictions in "threes": Minimum 2 genuine cards needed; K-K-Joker OK; 9-Joker-Joker NOT OK
+
+=== JOKER MOVEMENT ===
+- Jokers in a "three" = DEAD (cannot be moved)
+- Jokers in a "four" can be moved to the END of the sequence ONLY by the holder of the real card it represents ("tacking on")
+- Jokers can NEVER be moved to a different three or four
+
+=== DEAL & CONTRACTS (9-game set) ===
+In each game, a different number of cards are dealt and a different contract applies:
+- Game 1: 9 cards — Contract: 1 Three
+- Game 2: 10 cards — Contract: 1 Four
+- Game 3: 11 cards — Contract: 1 Three + 1 Four
+- Game 4: 12 cards — Contract: 2 Threes
+- Game 5: 13 cards — Contract: 2 Fours
+- Game 6: 14 cards — Contract: 2 Threes + 1 Four
+- Game 7: 15 cards — Contract: 1 Three + 2 Fours
+- Game 8: 16 cards — Contract: 2 Threes + 2 Fours
+- Game 9: 17 cards — Contract: 3 Fours
+Rules: Multiple fours must be in DIFFERENT suits; multiple threes must be of DIFFERENT ranks
+
+=== PLAY (Each Turn) ===
+1. DRAW: Take top card from Stock OR from Discard Pile
+2. LAY DOWN (optional): Lay down contract melds; once contract is laid, may tack cards onto existing melds
+3. DISCARD: Play one card (jokers cannot be discarded)
+
+=== CALLING (Taking Discard Out of Turn) ===
+- Any player can "call" for the top discard when it is NOT their turn
+- Effect: Caller takes discard + draws 1 extra card from stock, but cannot lay down or discard that turn
+- Player whose turn it was may REFUSE the call by taking the discard themselves
+- Maximum 3 calls per player per game
+- Can only call BEFORE laying down (once you've laid down, you cannot call)
+- Only one call per turn (the card underneath cannot be called)
+
+=== GOING OUT ===
+- First player to get rid of all cards wins the game (deal)
+- "Bending the Table" (Down and Out): go out on the SAME turn you first lay down → other players score DOUBLE penalties
+
+=== SCORING ===
+- Other players count their remaining hand values and add to cumulative total
+- Penalty values as listed above
+- Winner after 9 games (lowest total): wins the set
+
+=== KEY CONSTRAINTS (PARTIAL OBSERVABILITY) ===
+- Opponent hands are hidden; only discard pile top card is visible
+- Calls are public information (cards taken out of turn are visible)
+- Number of calls remaining per player can be tracked (max 3 per game)
+- Joker positions in melds are public once laid down

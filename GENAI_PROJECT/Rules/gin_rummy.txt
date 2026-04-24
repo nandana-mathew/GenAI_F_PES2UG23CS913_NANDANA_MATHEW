@@ -1,0 +1,60 @@
+GAME: Gin Rummy
+SOURCE: https://www.pagat.com/rummy/ginrummy.html
+
+=== PLAYERS & DECK ===
+- Primarily 2 players (3-4 player variants exist)
+- One standard 52-card deck
+- Card values: A=1, 2-10=face value, J/Q/K=10
+
+=== DEAL ===
+- Each player receives 10 cards
+- 21st card turned face up to start the Discard Pile
+- Remaining deck is the Stock (face down)
+- First dealer: player who draws lower card; thereafter winner of previous hand deals
+
+=== OBJECTIVE ===
+Form as many cards as possible into valid combinations (sets/runs) to minimise "deadwood" (unmatched cards).
+- Run/Sequence: 3+ consecutive cards of the same suit (e.g., 4♦-5♦-6♦)
+- Set/Group: 3-4 cards of the same rank (e.g., 7♣-7♦-7♠)
+- Ace is always LOW: A-2-3 is valid; A-K-Q is NOT valid
+- A card can only belong to ONE combination at a time
+
+=== PLAY (Each Turn) ===
+1. DRAW: Take the top card from Stock OR the top card from Discard Pile
+   - Cannot take the top discard and return the same card in the same turn
+2. DISCARD: Place one card face up on top of the Discard Pile
+
+=== FIRST TURN SPECIAL RULE ===
+- Non-dealer first has the option to take the turned-up card
+- If non-dealer declines, dealer may take the card
+- If both decline, non-dealer draws from stock and play begins normally
+
+=== KNOCKING ===
+- After drawing, a player may "knock" by:
+  1. Discarding one card face down
+  2. Exposing the entire hand arranged into sets/runs
+  3. Total deadwood value must be 10 points or less to knock
+- Opponent then exposes their hand and (if knocker didn't go GIN) may lay off unmatched cards onto knocker's melds
+- Cards cannot be laid off on the knocker's deadwood
+
+=== GOING GIN ===
+- Knocking with ZERO deadwood = "Going Gin"
+- Bonus 20 points awarded; opponent cannot lay off any cards
+- Player going Gin can NEVER be undercut
+
+=== SCORING ===
+- Knocker's deadwood < Opponent's deadwood: Knocker scores the difference
+- Knocker's deadwood >= Opponent's deadwood (undercut): Opponent scores the difference + 10-point bonus
+- Going Gin: 20-point bonus + opponent's deadwood score
+- Game ends when one player reaches 100 cumulative points; that player gets +100 bonus
+- Each player also gets +20 points ("box bonus") per hand won
+- Loser scores 0 all game → winner's bonus doubles to 200
+
+=== PLAY END CONDITIONS ===
+- Stock reduced to 2 cards and player who took 3rd-last card discards without knocking → hand cancelled, no score
+
+=== KEY CONSTRAINTS (PARTIAL OBSERVABILITY) ===
+- Only the top card of the Discard Pile is visible; Stock is hidden
+- Opponent's entire hand is unknown until knocking occurs
+- Players can track discards to infer opponent strategy
+- Deadwood count of opponent is unknown until showdown

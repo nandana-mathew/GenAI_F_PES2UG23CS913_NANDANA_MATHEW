@@ -1,0 +1,69 @@
+GAME: Indian Rummy (Paplu / 13-Card Rummy)
+SOURCE: https://www.pagat.com/rummy/indian.html
+
+=== PLAYERS & DECK ===
+- Up to 10 players
+- 2-6 players: Two standard 52-card decks + one printed joker each = 106 cards total
+- 7+ players: Three decks = 159 cards total
+- Wild cards: printed jokers + all cards of the same rank as the face-up turned card
+
+=== DEAL ===
+- One card is drawn randomly to determine seating order (highest card picks seat first)
+- Lowest card holder deals first
+- Player to dealer's LEFT draws a card face up (the "joker rank" card)
+- 13 cards dealt anti-clockwise to each player
+- One card dealt face up starts the Discard Pile; remaining stack placed face down
+
+=== JOKERS / WILD CARDS ===
+- All cards of the same rank as the turned-up card + printed jokers = wild cards
+- If turned-up card is a printed joker, only the other printed joker is wild
+- Wild cards can substitute for any card in a run or set
+- Wild card value for scoring = 0 points
+
+=== OBJECTIVE ===
+Arrange all 13 cards into valid runs (sequences) and sets (trails/trios).
+Required to declare "Rummy" (win):
+- At least TWO runs, and at LEAST ONE must be a "straight run" (no wild cards used as substitutes)
+- All remaining cards must also form valid combinations (runs or sets, wild cards allowed)
+- "Original Life" = first straight run; "Second Life" = second run
+
+=== VALID COMBINATIONS ===
+- Run/Sequence: 3+ consecutive cards of the same suit; A can be next to 2 (A-2-3) or K (Q-K-A); K-A-2 is INVALID
+- Set/Trail/Trio: 3 cards of the same rank in DIFFERENT suits (not all same suit)
+- Straight Run: A run formed WITHOUT wild cards substituting any card
+- Tanala (3-deck games): Three identical cards (e.g., 10♠-10♠-10♠) = equivalent to a straight run
+
+=== PLAY (Each Turn) ===
+- Player to dealer's RIGHT plays first; turns continue COUNTER-CLOCKWISE
+- Each turn: Pick up top card of Discard Pile OR top card of face-down Stock
+- Then discard one card face up on Discard Pile
+- Cannot discard the card just taken from discard pile in the same turn
+- NO cards are laid down during play — all combinations kept hidden until declaration
+
+=== GOING OUT (DECLARING RUMMY) ===
+- After picking a card, if hand forms required combinations (2 runs, 1 straight), discard the 14th card and declare "Rummy"
+- Expose 13 cards in valid combinations to win
+
+=== PACKING (DROPPING) ===
+- A player may "pack" (withdraw) at the START of their turn before drawing
+- First pack (before drawing any card): Pay 10 points to eventual winner; cards shuffled back into stack
+- Late pack (after first turn): Pay 40 points; cards removed from game
+- If all but one player pack, last player wins automatically
+
+=== SCORING ===
+Card point values for losers:
+- A, K, Q, J, 10 = 10 points each
+- 9, 8, 7, 6, 5, 4, 3, 2 = face value
+- Jokers (all wild cards) = 0 points
+Deductions: Cards in a straight run are NOT counted; if player has "second life" run + straight run, cards in all valid combinations are not counted
+Packed players pay 10 or 40 points to winner regardless of hands
+
+=== SPECIAL DECLARATIONS ===
+- Hand-Rummy: Declare before drawing on first turn if dealt a winning hand; players who already played pay double; unplayed players pay normal rate
+
+=== KEY CONSTRAINTS (PARTIAL OBSERVABILITY) ===
+- All hands are completely concealed until declaration
+- Only discards and draws from discard pile are visible
+- Joker rank is publicly visible
+- Players can infer opponent strategy from discard pile choices
+- Packing decisions reveal information about hand quality

@@ -1,0 +1,54 @@
+GAME: Basic Rummy (Straight Rummy)
+SOURCE: https://www.pagat.com/rummy/rummy.html
+
+=== PLAYERS & DECK ===
+- 2 to 6 players (best with 2-4)
+- One standard 52-card deck
+- Card rank (low to high): A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K
+
+=== DEAL ===
+- 2 players: 10 cards each
+- 3-4 players: 7 cards each
+- 5-6 players: 6 cards each
+- Remaining cards form the Stock (face down); top card placed face up starts the Discard Pile
+- First dealer chosen randomly; turn to deal alternates (2-player) or rotates clockwise (3+ players)
+
+=== OBJECTIVE ===
+Dispose of all cards in hand. Three ways to do so:
+1. MELDING: Place valid combinations face up on the table
+   - Sequence/Run: 3+ consecutive cards of the same suit (e.g., 4♥-5♥-6♥)
+   - Group/Set/Book: 3-4 cards of the same rank (e.g., 7♣-7♦-7♠)
+2. LAYING OFF: Add cards to existing melds on the table (from yourself or others)
+3. DISCARDING: Play one card face up on the discard pile at end of each turn
+
+=== PLAY (Each Turn) ===
+1. DRAW: Take either the top card of the Stock or the top card of the Discard Pile
+2. MELD (optional): Lay one valid combination face up (cannot meld more than one per turn in basic rules)
+3. LAY OFF (optional): Add cards to existing melds; no limit on number of cards laid off per turn
+4. DISCARD: Place one card face up on the Discard Pile
+   - Cannot discard the same card you just picked up from the Discard Pile in the same turn
+
+=== GOING OUT ===
+- A player wins by melding, laying off, or discarding all cards (called "Going Out")
+- As soon as someone goes out, play ceases immediately
+- No further melding or laying off is allowed once someone goes out
+
+=== SCORING ===
+When a player goes out, other players count unmelded cards:
+- Face cards (K, Q, J): 10 points each
+- Aces: 1 point each
+- Number cards: face value (e.g., 6 = 6 points)
+- Winner accumulates opponents' total points
+- Game continues until a player reaches the agreed target score
+
+=== SPECIAL RULES ===
+- Ace: Low only by default (A-2-3 valid; Q-K-A invalid unless house rule)
+- Stock Exhausted: Flip discard pile (without shuffling) to form new stock
+- Going Rummy: If a player has not previously melded and goes out in a single turn, the score is doubled (bonus rule)
+- Block Rummy variant: Discard pile is never reused; game ends when stock runs out
+
+=== KEY CONSTRAINTS (PARTIAL OBSERVABILITY) ===
+- Opponent hands are hidden; only discards are public
+- Players observe which cards opponents take from the discard pile
+- Stock cards drawn are hidden from others
+- Cannot rearrange existing melds when laying off

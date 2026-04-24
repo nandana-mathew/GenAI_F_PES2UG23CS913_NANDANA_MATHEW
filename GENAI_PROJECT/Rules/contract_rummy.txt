@@ -1,0 +1,66 @@
+GAME: Contract Rummy (also known as Liverpool Rummy / May I? / Shanghai Rummy / Progressive Rummy)
+SOURCE: https://www.pagat.com/rummy/ctrummy.html
+
+=== PLAYERS & DECK ===
+- 3 to 5 players (optimum: 4)
+- Two standard 52-card decks + jokers
+- Number of jokers = (number of players - 1)
+  → 3 players: 1 joker (106 cards total); 4 players: 2 jokers (107 total); 5 players: 3 jokers (108 total)
+
+=== DEAL ===
+- 7 rounds total
+- Rounds 1-3: Each player receives 10 cards
+- Rounds 4-7: Each player receives 12 cards
+- Remaining cards form the Stock; top card turned face up starts the Discard Pile
+
+=== OBJECTIVE ===
+Lowest cumulative score at the end of 7 rounds wins.
+
+=== MELD TYPES ===
+- Sequence/Run: 4+ consecutive cards of the same suit (e.g., 4♥-5♥-6♥-7♥)
+  - Ace can be high or low (A-2-3-4 and J-Q-K-A valid; Q-K-A-2 NOT valid)
+- Group/Set/Book: 3+ cards of the same rank (any suit, duplicates allowed)
+- Once melded, sequences can be extended at either end; groups can be extended with same-rank cards
+
+=== CONTRACTS (Per Round) ===
+Round 1: 2 Groups of 3 (6 cards)
+Round 2: 1 Group of 3 + 1 Sequence of 4 (7 cards)
+Round 3: 2 Sequences of 4 (8 cards)
+Round 4: 3 Groups of 3 (9 cards)
+Round 5: 2 Groups of 3 + 1 Sequence of 4 (10 cards)
+Round 6: 1 Group of 3 + 2 Sequences of 4 (11 cards)
+Round 7: 3 Sequences of 4 — NO discard allowed (player must meld ALL remaining cards)
+
+Must fulfill contract BEFORE any melding or laying off is allowed.
+
+=== PLAY (Each Turn) ===
+1. DRAW: Take top card from Stock OR top card from Discard Pile
+2. MELD (optional): Lay down contract + additional cards if desired
+3. LAY OFF (optional, only after contract laid down): Add cards to existing melds
+4. DISCARD: One card face up (except in Round 7's final meld)
+
+=== "MAY I?" — TAKING DISCARD OUT OF TURN ===
+- If the current player draws from stock, other players may request the top discard ("May I?")
+- Priority: player whose turn is soonest after the drawing player gets priority
+- Penalty: calling player takes the discard AND draws 1 extra card from stock
+- After one "May I?" is resolved, the next card on top can be "May I?"-ed by a different player
+- The same player cannot take two consecutive out-of-turn discards
+
+=== JOKERS ===
+- Can substitute for any missing card in sequences or groups
+- Joker in a SEQUENCE: any player who has melded their contract AND holds the real card may swap it for the joker (must lay off joker immediately — cannot save for later)
+- Joker in a GROUP: considered "dead" — cannot be reclaimed
+
+=== SCORING (Penalty Points for cards remaining in hand) ===
+- Joker: 15 pts (25 pts in May I? variant)
+- Ace: 11 pts
+- Face cards (K, Q, J): 10 pts each
+- Number cards: face value
+Lowest total score at end of 7 rounds wins.
+
+=== KEY CONSTRAINTS (PARTIAL OBSERVABILITY) ===
+- Opponent hands are hidden; only discards are public
+- "May I?" requests reveal that a player wants a specific card type
+- Number of jokers available is public knowledge
+- Melds on the table are visible to all players
+- Stock size can be estimated but not exactly known

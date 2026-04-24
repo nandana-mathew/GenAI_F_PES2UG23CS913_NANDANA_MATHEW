@@ -1,0 +1,63 @@
+GAME: Crazy Eights (also known as Switch, Swedish Rummy, Last One, Mau-Mau)
+SOURCE: https://www.pagat.com/eights/crazy8s.html
+
+=== PLAYERS & DECK ===
+- 2 or more players
+- Standard 52-card deck (or two decks shuffled for many players)
+- Card values for scoring: 8 = 50 pts; J/Q/K = 10 pts; Ace = 1 pt; others = face value
+
+=== DEAL ===
+- 2 players: 7 cards each
+- 3+ players: 5 cards each
+- Remaining cards = Stock (face down)
+- Top card of stock turned face up to start the Discard Pile
+
+=== OBJECTIVE ===
+Be the first to get rid of all cards in your hand. Others score penalty points for remaining cards.
+
+=== PLAY (Each Turn) ===
+Starting with player to dealer's left (clockwise), each player must either:
+(A) Play a legal card face up on the Discard Pile, OR
+(B) Draw a card from the Stock
+
+=== LEGAL PLAYS ===
+1. If top card is NOT an Eight: play any card matching the RANK or SUIT of the top discard
+   (e.g., top card = K♥ → can play any King or any Heart)
+2. An Eight can be played on ANY card regardless of suit or rank
+   - Player of the Eight MUST nominate a suit
+3. If top card IS an Eight: must play another Eight OR any card of the NOMINATED suit
+
+=== SPECIAL CARDS (common house rules) ===
+- Two (2): Next player must draw 2 cards (or play another Two to pass it on)
+- Queen (or Jack in some variants): Next player is skipped (misses a turn)
+- Ace: Reverses direction of play (play becomes anti-clockwise)
+- Eight: Wild card — play on anything, nominate a new suit
+
+=== FIRST CARD RULE ===
+- If an Eight is turned up as the starting card, dealer nominates a suit
+- If a special card is turned up, its effect is applied immediately
+
+=== SAYING "LAST CARD" ===
+- Player with one card remaining MUST say "last card" before the next player takes a turn
+- Failure to do so = draw 2 cards as penalty
+
+=== STOCK EXHAUSTED ===
+- Shuffle all played cards EXCEPT the top discard card to form a new stock
+
+=== WINNING ===
+- First player to get rid of all cards wins
+- Other players score penalty points for remaining cards:
+  - Eight: 50 pts; Face cards (J/Q/K): 10 pts; Ace: 1 pt; 2-10: face value
+
+=== VARIATIONS ===
+- Drawing: Some rules require you to KEEP drawing until you can play (vs. draw once)
+- Mandatory play: Some rules say you MUST play if you can (no voluntary drawing)
+- Multiple equal cards: Some allow playing all cards of the same rank at once
+- Crazy Eights Countdown variant: Players start with score of 8 (8 cards); each time you go out reduce score by 1 and get new cards; first to reach 0 wins
+
+=== KEY CONSTRAINTS (PARTIAL OBSERVABILITY) ===
+- All player hands are hidden; only current Discard Pile top card and draw count are observable
+- When special cards are played, effects are immediately visible
+- Players can count cards drawn from stock by others to estimate hand sizes
+- Nominated suit (after Eight is played) is public information
+- "Last card" declarations are public signals
